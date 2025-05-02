@@ -4,32 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dented Modding</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="header">
+  <header class="header">
+    <div class="logo">
       <h1>Dented Modding</h1>
-    </header>
-    <div class="content">
-      <aside class="sidebar">
-        <nav>
-          <h2>Navigation</h2>
-          <ul>
-            <li><a href="https://modrinth.com/" target="_blank">Modrinth</a></li>
-            <li><a href="https://www.curseforge.com/" target="_blank">CurseForge</a></li>
-            <li><a href="https://www.google.com/" target="_blank">Google</a></li>
-          </ul>
-        </nav>
-      </aside>
-      <main class="main">
-        <h2>Main Section</h2>
-        <p>This is the main content area of your site. Resize the window to see how the layout adapts.</p>
-      </main>
+      <p>Innovating Minecraft Experiences</p>
     </div>
-    <footer class="footer">
-      <p>© 2025 Dented Modding</p>
-    </footer>
-  </div>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro" class="intro">
+      <h2>Welcome to Dented Modding</h2>
+      <p>We are a group of modders dedicated to creating unique and engaging Minecraft experiences.</p>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Our Projects</h2>
+      <div class="project-list">
+        <!-- Project items will be added here -->
+      </div>
+    </section>
+
+    <section id="team" class="team">
+      <h2>Meet the Team</h2>
+      <div class="team-members">
+        <!-- Team member profiles will be added here -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to collaborate? Reach out to us!</p>
+      <form action="#" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Dented Modding. All rights reserved.</p>
+  </footer>
 </body>
 </html>

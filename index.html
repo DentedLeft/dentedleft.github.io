@@ -3,79 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dented Modding</title>
+  <title>DentedLeft Gaming</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar">
-      <div class="logo">
-        <h1>Dented Modding</h1>
-        <p>Innovating Minecraft Experiences</p>
+  <header>
+    <div class="logo">🧱 DentedLeft Gaming</div>
+    <nav>
+      <ul>
+        <li><a href="#mods">Mods</a></li>
+        <li><a href="#videos">YouTube</a></li>
+        <li><a href="#streamers">Twitch</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Welcome to DentedLeft Gaming</h1>
+      <p>We craft Minecraft mods, create entertaining YouTube content, and stream our adventures live. Explore our world!</p>
+    </section>
+
+    <section id="mods" class="section">
+      <h2>🛠 Our Mods</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Best Bundles</h3>
+          <p>4x the size and dyeable!.</p>
+        </div>
+        <div class="card">
+          <h3>Netherite Mace</h3>
+          <p>A netherite mace for your convenience.</p>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </aside>
+    </section>
 
-    <main class="main-content">
-      <header class="header">
-        <h1>Welcome to Dented Modding</h1>
-      </header>
-
-      <section id="intro" class="intro">
-        <p>We are a group of modders dedicated to creating unique and engaging Minecraft experiences.</p>
-      </section>
-
-      <section id="projects" class="projects">
-        <h2>Our Projects</h2>
-        <div class="project-list">
-          <div class="project-item">
-            <a href="https://modrinth.com/mod/chance-choice" target="_blank">
-              <img src="https://modrinth.com/mod/chance-choice/versions" alt="Chance & Choice Mod" />
-              <h3>Chance & Choice</h3>
-            </a>
-          </div>
-          <div class="project-item">
-            <a href="https://modrinth.com/mod/deck-of-many-things" target="_blank">
-              <img src="https://modrinth.com/mod/deck-of-many-things/versions" alt="Deck of Many Things Mod" />
-              <h3>Deck of Many Things</h3>
-            </a>
-          </div>
-          <div class="project-item">
-            <a href="https://modrinth.com/mod/jamming" target="_blank">
-              <img src="https://modrinth.com/mod/jamming/versions" alt="Jamming Mod" />
-              <h3>Jamming</h3>
-            </a>
-          </div>
-          <!-- Add more project items as needed -->
+    <section id="videos" class="section">
+      <h2>🎥 YouTube Channel</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Video 1</h3>
+          <p>Our best tricks for aspiring Minecraft modders.</p>
         </div>
-      </section>
-
-      <section id="team" class="team">
-        <h2>Meet the Team</h2>
-        <div class="team-members">
-          <!-- Team member profiles will be added here -->
+        <div class="card">
+          <h3>Video 2</h3>
+          <p>See the mod in action with commentary.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
-    </main>
-  </div>
+    <section id="streamers" class="section">
+      <h2>🎮 Our Streamers</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Streamer 1</h3>
+          <p>Mod showcases and chaotic survival streams.</p>
+        </div>
+        <div class="card">
+          <h3>Streamer 2</h3>
+          <p>Building megabases and vibing with chat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>📬 Contact Us</h2>
+      <div class="contact-links">
+        <a href="mailto:dentedmodding@gmail.com" class="contact-link">
+          📧 Via Email
+        </a>
+        <a href="https://github.com/DentedLeft/Dented-Modding/issues" class="contact-link" target="_blank">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="contact-icon" width="24" height="24" fill="#ffffff">
+			<path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38
+             0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+             -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+             2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+             0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+             0 0 .67-.21 2.2.82a7.66 7.66 0 012 0c1.53-1.03 
+             2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+             1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+             3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 
+             2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/>
+			</svg>
+		On GitHub
+		</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DentedLeft Gaming. All rights reserved.</p>
+  </footer>
 </body>
 </html>

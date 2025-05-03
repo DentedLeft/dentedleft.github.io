@@ -11,6 +11,12 @@ main {
   padding-bottom: 4rem; /* Add space for the fixed footer */
 }
 
+.logo {
+  font-size: 2rem; /* Adjust up by about 2 steps */
+  font-weight: bold;
+  color: #ffffff;
+}
+
 a {
   color: #aaff00; /* Changed to lime green */
   text-decoration: none;
@@ -45,12 +51,13 @@ nav ul {
 nav li a {
   font-weight: bold;
   font-size: 1rem;
-  color: #aaff00; /* Changed to lime green */
-  transition: color 0.2s;
+  color: #aaff00;
+  transition: color 0.2s, transform 0.2s ease;
 }
 
 nav li a:hover {
   color: #ffffff;
+  transform: scale(1.1);
 }
 
 /* Intro Section */
@@ -96,6 +103,12 @@ nav li a:hover {
   border-radius: 8px;
   width: 280px;
   box-shadow: 0 0 10px rgba(0, 196, 204, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 196, 204, 0.2);
 }
 
 .card h3 {
@@ -106,6 +119,17 @@ nav li a:hover {
 .card p {
   color: #ccc;
   font-size: 0.95rem;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.card-link:hover .card {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 196, 204, 0.2);
 }
 
 /* Contact Section */
@@ -120,7 +144,7 @@ nav li a:hover {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #aaff00; /* Changed to lime green */
+  color: #9c6eff; /* Changed to lime green */
   font-weight: bold;
   font-size: 1.1rem;
 }

@@ -28,8 +28,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -87,6 +86,7 @@ main {
 h1, h2 {
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 1rem;
+  font-size: 2.0rem;
   text-align: center;
   color: #aaff00;
 }
@@ -209,16 +209,14 @@ footer {
 
 @media (max-width: 600px) {
   header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   nav ul {
-    flex-direction: row;
-    gap: 1rem;
-    width: auto;
+    flex-direction: right;
+    gap: 0.5rem;
+    width: 25%;
   }
 
   .intro h1 {
@@ -238,5 +236,69 @@ footer {
   footer {
     position: static;
     margin-top: 2rem;
+  }
+}
+
+
+
+/* Enhanced Card Styles */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card-link {
+  text-decoration: none;
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #aa66ff;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .card-link {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }

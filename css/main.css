@@ -29,16 +29,18 @@ a:hover {
 /* Header with gradient and lime text */
 header {
   background: linear-gradient(to right, #2e003e, #0077ff, #2e003e);
-  padding: 1rem 2rem;
+  padding: 1vh 2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allow graceful wrapping */
+  flex-wrap: nowrap;
+  flex-shrink: 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 }
 
 nav ul {
@@ -161,14 +163,15 @@ nav li a:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1vh 2vw;
   background-color: #282828;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
   color: #777;
-  position: fixed; /* Stick to bottom */
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  flex-shrink: 0;
 }
 
 /* Responsive */

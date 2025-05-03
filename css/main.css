@@ -102,6 +102,7 @@ h3 {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  padding: 2rem;
 }
 
 .card-link {
@@ -130,6 +131,9 @@ h3 {
   color: #ffffff;
   line-height: 1.4;
   word-wrap: break-word;
+  text-decoration: none;
+  flex: 1 1 300px;
+  max-width: 320px;
 }
 
 .card-link:hover {
@@ -146,11 +150,38 @@ h3 {
   gap: 1rem;
   width: 100%;
   height: 100%;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #aa66ff;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #e0e0e0;
+  margin: 0;
 }
 
 .card-img {
   max-height: 150px;
   object-fit: contain;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.75rem;
 }
 
 .video-wrapper {
@@ -175,7 +206,6 @@ h3 {
 
 .contact-link {
   background-color: #444;
-  
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   display: flex;
@@ -236,69 +266,5 @@ footer {
   footer {
     position: static;
     margin-top: 2rem;
-  }
-}
-
-
-
-/* Enhanced Card Styles */
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.card-link {
-  text-decoration: none;
-  flex: 1 1 300px;
-  max-width: 320px;
-}
-
-.card {
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-}
-
-.card img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin-bottom: 0.75rem;
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  margin: 0.5rem 0;
-  color: #aa66ff;
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.4;
-  color: #e0e0e0;
-  margin: 0;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .card-link {
-    flex: 1 1 100%;
-    max-width: 100%;
   }
 }
